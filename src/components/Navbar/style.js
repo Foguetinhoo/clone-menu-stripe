@@ -18,5 +18,13 @@ export const ListItem = styled.li`
 export const DropdownStyles = styled.div`
   .dropdown-option{
     padding:20px 30px;
+    outline:none;
+    color:#fff; 
+    font-size:18px;
+    transition:opacity 0.2s;
+    &:hover, &:focus{
+      opacity:.55;
+    }
+
   }
 `;
