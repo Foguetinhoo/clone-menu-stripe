@@ -1,9 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{useEffect,useState} from 'react';
 
-function App() {
-  return <div>Hello World</div>
+import GlobalStyle from './styles/globalStyle';
+import { Layout, Wrapper } from './components/Layout'
+import Navbar from './components/Navbar';
+
+export default function App() {
+  return <>
+    <Layout>
+      <Navbar/>
+    </Layout>
+    <GlobalStyle />
+  </>
 }
-
-export default App;
